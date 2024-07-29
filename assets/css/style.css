@@ -28,11 +28,35 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  --height: 60px;
+  display: inline-block; /*do thẻ a là thẻ inline*/
+  min-width: 205px;
+  height: var(--height);
+  padding: 0 20px;
+  border-radius: 99px;
+  border: 1px solid #2e80ce;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: var(--height);
+  color: #fff;
+  background: #2e80ce;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 /* Header */
 .header {
   min-height: 100vh; /* Nếu để height không thì nó sẽ hơi bị cứng nên để min-height */
   background: var(--header-bacground);
-  padding-top: 36px;
+}
+
+.container {
+  padding-top: 30px;
 }
 
 .logo {
@@ -80,4 +104,50 @@ a {
 .logo__brand--small {
   font-size: 1.2em;
   font-weight: 300;
+}
+
+/* header-top */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar__list {
+  display: flex;
+  padding: 8px 0;
+  gap: 42px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.navbar__link,
+.action__loggin {
+  color: #c9d2da;
+  font-size: 1.6rem;
+}
+
+.navbar__link:hover,
+.navbar__item--active {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-shadow: 1px 0 0 currentColor;
+  color: #fff;
+}
+
+.navbar__item--active::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* action */
+.action__signup {
+  --height: 44px;
+  min-width: 104px;
+  margin-left: 28px;
 }
