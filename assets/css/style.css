@@ -524,3 +524,65 @@ a {
 .member__control-btn:hover {
   background-color: #2e80ce;
 }
+
+/* install */
+.install {
+  margin: 85px 0;
+  padding: 85px 0;
+}
+
+.install__inner {
+  display: flex;
+  background-color: #2e80ce;
+  height: 427px;
+  border-radius: 4px;
+}
+
+.install__img {
+  width: 284px;
+  height: 522px;
+  margin-left: 70px;
+  margin-top: -95px;
+}
+
+.install__content {
+  margin-left: 160px;
+  padding: 76px 0;
+}
+
+.install-heading,
+.install-desc {
+  text-align: left;
+}
+
+.install-heading {
+  margin-right: 167px;
+  width: 489px;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.install-desc {
+  margin: 0;
+  width: 586px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 200;
+  line-height: 1.67;
+  margin-top: 18px;
+}
+
+.install__btn {
+  margin-top: 38px;
+  background-color: #2e80ce;
+  border: 2px solid #2e80ce;
+}
+
+.install__btn:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: 0.35s;
+}
