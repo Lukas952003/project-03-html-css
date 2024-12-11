@@ -93,6 +93,24 @@
 
     <!-- css main -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Amination -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-31KDJVHZF8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-31KDJVHZF8");
+    </script>
   </head>
   <body>
     <header class="header">
@@ -141,7 +159,9 @@
         <section class="hero">
           <!-- Hero content -->
           <section class="hero__content">
-            <h1 class="hero__heading">Exceptional dental care for all ages.</h1>
+            <h1 class="hero__heading" data-aos="fade-up-right">
+              Exceptional dental care for all ages.
+            </h1>
             <p class="hero__desc">
               Exceptional dental care for all ages. Your great smile begins with
               a great dentist.
@@ -172,7 +192,12 @@
     </header>
 
     <main>
-      <section class="service" id="service">
+      <section
+        class="service"
+        id="service"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+      >
         <div class="container">
           <h2 class="section-heading">Our services</h2>
           <p class="section-desc">
@@ -748,5 +773,9 @@
         </h5>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
